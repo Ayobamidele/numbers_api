@@ -4,8 +4,8 @@ class NumberService:
     @staticmethod
     async def get_fun_fact(number: int) -> str:
         async with httpx.AsyncClient() as client:
-            response = await client.get(f"http://numbersapi.com/{number}")
-        return response.text
+            response = await client.get(f"http://numbersapi.com/{number}/math?json")
+        return response.json()['text']
     @staticmethod
     def is_prime(number: int) -> bool:
         if number <= 1:
