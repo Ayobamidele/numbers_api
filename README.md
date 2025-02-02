@@ -7,7 +7,7 @@ This is a public API developed for the HNG12 Stage 1 Backend task. It takes a nu
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Ayobamidele/numbers-api.git
+git clone https://github.com/Ayobamidele/numbers_api.git
 ```
 
 2. Install dependencies:
