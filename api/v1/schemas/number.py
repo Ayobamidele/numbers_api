@@ -12,7 +12,7 @@ class NumberQueryParams(BaseModel):
             raise HTTPException(
                 400,
                 {
-                    "number": "alphabet",
+                    "number": value,
                     "error": True
                 })
         return value

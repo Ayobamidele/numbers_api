@@ -22,11 +22,15 @@ class NumberService:
 
     @staticmethod
     def armstrong_number(number: int) -> bool:
+        if number < 0:
+            return False
+        
         digits = list(map(int, str(number)))
         return sum(d ** len(digits) for d in digits) == number
 
     @staticmethod
     def digit_sum(number: int) -> int:
-        return sum(int(digit) for digit in str(number))
+        return sum(int(digit) for digit in str(abs(number)))
+
 
 number_service = NumberService()
